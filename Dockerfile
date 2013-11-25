@@ -19,5 +19,4 @@ RUN cp /opt/zookeeper-3.4.5/conf/zoo_sample.cfg /opt/zookeeper-3.4.5/conf/zoo.cf
 
 EXPOSE 2181 2888 3888
 
-ENTRYPOINT ["/opt/zookeeper-3.4.5/bin/zkServer.sh"]
-CMD ["start-foreground"]
+CMD ["/opt/zookeeper-3.4.5/bin/zkServer.sh", "start-foreground"]
